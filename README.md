@@ -1,8 +1,13 @@
 # eBA-external-app-sample
 Harici uygulamalardan eBA Workflow &amp; Form kullanımının gösterildiği örnek bir projedir.
 
-# eBA Form Harici Uygulama Geliştirme Rehberi
-Bu rehber, eBA Formlarınıza özel harici uygulamanızı tasarladıktan sonra süreç işlemlerini nasıl gerçekleştirebileceğinizi belirtmek amacıyla oluşturulmuştur. Bütün bu işlemler **eBARestAPI** adlı API üzerinden gerçekleştirilmektedir. Bu rehberde kullanmanız gereken tüm endpointler sırasıyla verilmiştir.
+# eBA Form Mobil Uygulama Geliştirme Rehberi
+Bu rehber, eBA Formlarınıza özel mobil uygulamanızı tasarladıktan sonra süreç işlemlerini nasıl gerçekleştirebileceğinizi belirtmek amacıyla oluşturulmuştur. Bütün bu işlemler **eBARestAPI** adlı API üzerinden gerçekleştirilmektedir. Bu rehberde kullanmanız gereken tüm endpointler sırasıyla verilmiştir.
+
+# Örnek Süreç ve Form Projesi
+Örnek süreç **Oracle** ortam için deploy edileceği zaman **eBA Configuration Manager -> Compiler** sekmesi altındaki uzunluklar en az 100 karakter olarak belirlenip servisler restart edilmelidir.
+
+Örnek form projesindeki endpointler default olarak localhost'a bakmaktadır. Projeyi çalıştırmak için bu endpointleri kendi endpointiniz ile değiştirmelisiniz.
 
 ## Endpoint Authentication 
 **Documents/SaveDocumentData**, **Queries/Execute**, **ProcessEvents/Events** ve **ProcessEvents/Continue** endpointlerinde _body_ içerisinde gönderilen _Token_ parametresiyle authentication işlemi yapılmaktadır. Burada doldurulan değerler **Login/Login** endpointinin responsudur. 
