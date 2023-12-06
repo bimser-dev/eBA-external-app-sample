@@ -27,13 +27,13 @@ namespace eBAFormExample
         {
             List<ObjectItem> listBoxItems = new List<ObjectItem>
             {
-                new ObjectItem{Key="1",Value="Elma"},
-                new ObjectItem{Key="2",Value="Armut"},
-                new ObjectItem{Key="3",Value="Muz"},
-                new ObjectItem{Key="4",Value="Kiraz"},
-                new ObjectItem{Key="5",Value="Karpuz"},
-                new ObjectItem{Key="6",Value="Kavun"},
-                new ObjectItem{Key="7",Value="Şeftali"},
+                new ObjectItem{Key="1",Value="ELMA"},
+                new ObjectItem{Key="2",Value="ARMUT"},
+                new ObjectItem{Key="3",Value="MUZ"},
+                new ObjectItem{Key="4",Value="KIRAZ"},
+                new ObjectItem{Key="5",Value="KARPUZ"},
+                new ObjectItem{Key="6",Value="KAVUN"},
+                new ObjectItem{Key="7",Value="SEFTALI"},
             };
             lstMeyveler.DataSource = listBoxItems;
             lstMeyveler.DisplayMember = "Value";
@@ -56,10 +56,10 @@ namespace eBAFormExample
         {
             List<ObjectItem> comboBoxItems = new List<ObjectItem>
             {
-                new ObjectItem{Key="A",Value="A Sınıfı"},
-                new ObjectItem{Key="A2",Value="A2 Sınıfı"},
-                new ObjectItem{Key="A1",Value="A1 Sınıfı"},
-                new ObjectItem{Key="B",Value="B Sınıfı"}
+                new ObjectItem{Key="A",Value="A SINIFI"},
+                new ObjectItem{Key="A2",Value="A2 SINIFI"},
+                new ObjectItem{Key="A1",Value="A1 SINIFI"},
+                new ObjectItem{Key="B",Value="B SINIFI"}
             };
             DTG_CMB_DrivingLicence.DataSource = comboBoxItems;
             DTG_CMB_DrivingLicence.DisplayMember = "Value";
@@ -70,11 +70,11 @@ namespace eBAFormExample
         {
             List<ObjectItem> comboBoxItems = new List<ObjectItem>
             {
-                new ObjectItem{Key="1",Value="Bilgisayar"},
-                new ObjectItem{Key="2",Value="Monitör"},
-                new ObjectItem{Key="3",Value="Telefon"},
-                new ObjectItem{Key="4",Value="Çanta"},
-                new ObjectItem{Key="5",Value="Klavye-Mouse"}
+                new ObjectItem{Key="1",Value="BILGISAYAR"},
+                new ObjectItem{Key="2",Value="MONITOR"},
+                new ObjectItem{Key="3",Value="TELEFON"},
+                new ObjectItem{Key="4",Value="CANTA"},
+                new ObjectItem{Key="5",Value="KLAVYE-MOUSE"}
             };
             cmbInventoryType.DataSource = comboBoxItems;
             cmbInventoryType.DisplayMember = "Value";
@@ -84,7 +84,7 @@ namespace eBAFormExample
         private void btnStart_Click(object sender, EventArgs e)
         {
             MainFormData data = CreateMainFormData();
-            ProcessHelper.StartProcess("Tozer_YeniPersonel", data);
+            ProcessHelper.StartProcess("EXTENSIONFORMAPPLICATION", data);
             MessageBox.Show("Süreç başarıyla oluşturuldu.", "İşlem başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -180,7 +180,7 @@ namespace eBAFormExample
         private Details SetDetails()
         {
             Details details = new Details();
-            details.DetailsForm = "EnvanterFormu";
+            details.DetailsForm = "ENVANTERFORMU";
             List<DetailsRow> rows = new List<DetailsRow>();
             for (int i = 0; i < dtgEnvanter.Rows.Count; i++)
             {

@@ -116,7 +116,7 @@ namespace eBAFormExample
                 {
                     new Form
                     {
-                        Name="Form",
+                        Name="FORM",
                         Controls = new List<Control>
                         {
                             new Control
